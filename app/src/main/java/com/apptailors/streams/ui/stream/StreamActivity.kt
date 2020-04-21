@@ -9,10 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import coil.api.load
 import com.apptailors.streams.BuildConfig
 import com.apptailors.streams.R
-import com.apptailors.streams.common.DELAY
-import com.apptailors.streams.common.EVERY_SECOND
-import com.apptailors.streams.common.FREEZE_PROGRESS
-import com.apptailors.streams.common.REPEAT
+import com.apptailors.streams.common.*
 import com.apptailors.streams.data.entity.BuffResult
 import com.apptailors.streams.data.network.ResultObserver
 import com.apptailors.streams.ext.snackBar
@@ -137,7 +134,7 @@ class StreamActivity : AppCompatActivity() {
     }
 
     private fun onFailure(exception: Exception) =
-        stream_layout.snackBar(exception.localizedMessage ?: "Error occured")
+        stream_layout.snackBar(exception.localizedMessage ?: NETWORK_ERROR)
 
     private fun setUpBuff(result: BuffResult) = with(result) {
         author_label_author_image.load(result.author.image)

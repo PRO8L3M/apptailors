@@ -1,5 +1,8 @@
 package com.apptailors.streams.ext
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -14,4 +17,9 @@ inline fun CoroutineScope.startCoroutineTimer(delayMillis: Long = 0, repeatMilli
     } else {
         action()
     }
+}
+
+inline fun <reified T: Activity> Context.startActivity(block: (Intent.() -> Unit) = {}) {
+    val intent = Intent(this, T::class.java).apply { block() }
+    startActivity(intent)
 }
