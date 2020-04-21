@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_radius_12dp">12dp</dimen>
+    <dimen name="corner_radius_65dp">65dp</dimen>
+    <dimen name="padding_small_8dp">8dp</dimen>
+    <dimen name="margin_medium_16dp">16dp</dimen>
+    <dimen name="margin_small_8dp">8dp</dimen>
+    <dimen name="margin_small_4dp">4dp</dimen>
+    <dimen name="margin_large_32dp">32dp</dimen>
+    <dimen name="padding_small_4dp">4dp</dimen>
+    <dimen name="margin_big_24dp">24dp</dimen>
+    <dimen name="margin_medium_20dp">20dp</dimen>
+    <dimen name="padding_small_2dp">2dp</dimen>
+</resources>

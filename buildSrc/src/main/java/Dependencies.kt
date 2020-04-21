@@ -27,6 +27,15 @@ object Versions {
     val archComponentsKtx = "2.3.0-alpha01"
 
     val navigation = "2.3.0-alpha01"
+
+    val exoplayer = "2.11.4"
+
+    val retrofit = "2.6.0"
+    val moshi = "2.4.0"
+    val moshiConverter = "2.6.0"
+    val okhttp = "4.1.0"
+
+    val coil = "0.10.0"
 }
 
 object Libraries {
@@ -60,9 +69,19 @@ object Libraries {
     val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     val navigationKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
 
+    val exoplayer = "com.google.android.exoplayer:exoplayer:${Versions.exoplayer}"
+
     val material = "com.google.android.material:material:${Versions.material}"
 
     val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
 
     val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+
+    val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    val moshi = "com.squareup.retrofit2:converter-moshi:${Versions.moshi}"
+    val moshiConverter = "com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}"
+    val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
+    val okhttpInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
+
+    val coil = "io.coil-kt:coil:${Versions.coil}"
 }

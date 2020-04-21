@@ -1,19 +1,25 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
 
     defaultConfig {
-        applicationId "com.my.template"
-        minSdkVersion 23
+        applicationId "com.apptailors.streams"
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", 'BASE_URL', baseURL
     }
 
     buildTypes {
@@ -21,6 +27,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -56,6 +66,18 @@ dependencies {
     implementation Libraries.navigationFragmentKtx
     implementation Libraries.navigationKtx
 
+    implementation Libraries.exoplayer
+
+    implementation Libraries.moshi
+    implementation Libraries.moshiConverter
+    implementation Libraries.retrofit
+    implementation Libraries.okhttp
+    implementation Libraries.okhttpInterceptor
+
+    implementation Libraries.coil
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation Libraries.junit
     androidTestImplementation Libraries.androidxJunit
     androidTestImplementation Libraries.androidxEspresso

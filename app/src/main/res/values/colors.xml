@@ -3,4 +3,27 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="lightBlack">#B31b1b1b</color>
+    <color name="lightGray">#c9ffffff</color>
+    <color name="gray">#31323A</color>
+    <color name="red">#FF0700</color>
+    <color name="brightGray">#F5F6F9</color>
+    <color name="blue">#2F9CCA</color>
+    <color name="darkGray">#3E3E3E</color>
+    <color name="weakGray">#959595</color>
+    <color name="weakRed">#e24339</color>
+
+    <color name="question_view_background">@color/lightBlack</color>
+    <color name="answer_background">@color/lightGray</color>
+    <color name="author_background">@color/lightGray</color>
+    <color name="answer_text_color">@color/gray</color>
+    <color name="author_text_color">@color/gray</color>
+    <color name="question_text_color">@android:color/white</color>
+    <color name="stream_list_top_background">@color/red</color>
+    <color name="stream_list_background">@color/brightGray</color>
+    <color name="stream_view_state_live">@color/red</color>
+    <color name="stream_view_state_tomorrow">@color/blue</color>
+    <color name="stream_view_state_finished">@color/darkGray</color>
+    <color name="stream_view_description">@color/weakGray</color>
+    <color name="progressbar_stroke">@color/weakRed</color>
 </resources>

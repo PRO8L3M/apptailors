@@ -2,4 +2,6 @@
     <string name="app_name">apptailors</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="streams_list_title">Streams</string>
+    <string name="stream_list_description">Participate on this live events</string>
 </resources>
