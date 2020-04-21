@@ -20,6 +20,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", 'BASE_URL', baseURL
+        buildConfigField "String", 'STREAM_URI', streamUri
     }
 
     buildTypes {
@@ -76,8 +77,8 @@ dependencies {
 
     implementation Libraries.coil
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation Libraries.constraint
+
     testImplementation Libraries.junit
     androidTestImplementation Libraries.androidxJunit
     androidTestImplementation Libraries.androidxEspresso

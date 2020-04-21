@@ -48,6 +48,7 @@
     <style name="StreamViewState" parent="CommonTextStyle">
         <item name="android:textSize">10sp</item>
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
         <item name="textAllCaps">true</item>
         <item name="android:textAlignment">center</item>
         <item name="android:padding">@dimen/padding_small_2dp</item>

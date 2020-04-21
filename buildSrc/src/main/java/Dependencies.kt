@@ -36,6 +36,8 @@ object Versions {
     val okhttp = "4.1.0"
 
     val coil = "0.10.0"
+
+    val constraint = "1.1.3"
 }
 
 object Libraries {
@@ -84,4 +86,6 @@ object Libraries {
     val okhttpInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
 
     val coil = "io.coil-kt:coil:${Versions.coil}"
+
+    val constraint = "androidx.constraintlayout:constraintlayout:${Versions.constraint}"
 }

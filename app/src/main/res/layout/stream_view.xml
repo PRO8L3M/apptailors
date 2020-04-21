@@ -20,7 +20,8 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/stream_view_image"
             android:layout_width="0dp"
-            android:layout_height="190dp"
+            android:layout_height="@dimen/stream_view_image_height_190dp"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/stream_view_guideline_top"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,45 +29,46 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/stream_view_station"
-            android:layout_width="80dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/stream_view_station_width_80dp"
+            android:layout_height="@dimen/stream_view_station_height_20dp"
             android:layout_marginStart="@dimen/margin_medium_16dp"
-            android:layout_marginTop="@dimen/margin_small_8dp"
+            android:layout_marginTop="@dimen/margin_medium_16dp"
+            android:scaleType="fitStart"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/stream_view_state"
+            style="@style/StreamViewState"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_medium_16dp"
-            style="@style/StreamViewState"
             app:layout_constraintBottom_toTopOf="@+id/stream_view_guideline_top"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/stream_view_guideline_top" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/stream_view_title"
+            style="@style/StreamViewTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_medium_20dp"
             android:layout_marginStart="@dimen/margin_medium_16dp"
+            android:layout_marginTop="@dimen/margin_medium_20dp"
             android:layout_marginEnd="@dimen/margin_small_8dp"
             android:layout_marginBottom="@dimen/margin_small_8dp"
-            style="@style/StreamViewTitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/stream_view_guideline_top" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/stream_view_description"
+            style="@style/StreamViewDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_small_8dp"
             android:layout_marginStart="@dimen/margin_medium_16dp"
+            android:layout_marginTop="@dimen/margin_small_8dp"
             android:layout_marginEnd="@dimen/margin_small_8dp"
             android:layout_marginBottom="@dimen/margin_small_8dp"
-            style="@style/StreamViewDescription"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
